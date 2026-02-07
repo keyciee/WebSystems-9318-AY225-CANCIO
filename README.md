@@ -119,10 +119,17 @@ This is a professional academic department website for the College of Computer S
 
 ## File Structure
 ```
-├── index.html          # Main HTML file with all page sections
-├── styles.css          # Comprehensive CSS with responsive design
-├── script.js           # Advanced JavaScript functionalities
-└── README.md           # This documentation file
+├── assets/
+│   ├── index.html        # Main HTML file with all page sections
+│   └── (other html files)
+│
+├── styles/
+│   └── styles.css        # Comprehensive CSS with responsive design
+│
+├── script/
+│   └── script.js         # Advanced JavaScript functionalities
+│
+└── README.md             # Project documentation file
 ```
 
 ## Technology Stack
