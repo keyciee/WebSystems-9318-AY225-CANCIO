@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - College of Computer Studies</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>College of Computer Studies</h1>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="programs.html" class="nav-link">Programs</a></li>
+                <li><a href="faculty.html" class="nav-link">Faculty</a></li>
+                <li><a href="announcements.html" class="nav-link">Announcements</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <h1>Contact Us</h1>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <div class="info-item">
+                        <h3>Address</h3>
+                        <p>College of Computer Studies Building<br>
+                        University Campus, Quezon City<br>
+                        Metro Manila, Philippines 1108</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Phone</h3>
+                        <p>+63 2 8888-9999</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Email</h3>
+                        <p>info@ccs.edu.ph</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Office Hours</h3>
+                        <p>Monday - Friday: 8:00 AM - 5:00 PM<br>
+                        Saturday: 8:00 AM - 12:00 PM</p>
+                    </div>
+                </div>
+
+                <!-- Inquiry Form -->
+                <div class="contact-form-container">
+                    <h2>Send an Inquiry</h2>
+                    <form id="inquiryForm" class="inquiry-form">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inquiryType">Inquiry Type *</label>
+                            <select id="inquiryType" name="inquiryType" required>
+                                <option value="">Select inquiry type</option>
+                                <option value="Admission">Admission Inquiry</option>
+                                <option value="Program">Program Information</option>
+                                <option value="Faculty">Faculty Contact</option>
+                                <option value="General">General Question</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Success Message Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content modal-small">
+            <span class="modal-close" onclick="closeSuccessModal()">&times;</span>
+            <div class="success-message">
+                <h2>✓ Success!</h2>
+                <p id="successMessage"></p>
+                <button class="btn btn-primary" onclick="closeSuccessModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>College of Computer Studies</h3>
+                    <p>Empowering future technology leaders through excellence in education and research.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: info@ccs.edu.ph<br>
+                    Phone: +63 2 8888-9999</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 College of Computer Studies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script/common.js"></script>
+    <script src="../script/contact.js"></script>
+</body>
+</html>

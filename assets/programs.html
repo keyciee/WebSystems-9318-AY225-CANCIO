@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs - College of Computer Studies</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>College of Computer Studies</h1>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="programs.html" class="nav-link active">Programs</a></li>
+                <li><a href="faculty.html" class="nav-link">Faculty</a></li>
+                <li><a href="announcements.html" class="nav-link">Announcements</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <h1>Academic Programs</h1>
+            <p class="subtitle">Explore our comprehensive range of degree programs designed to meet industry demands</p>
+
+            <!-- Program Tabs -->
+            <div class="program-tabs">
+                <button class="tab-btn active" data-tab="undergraduate">Undergraduate Programs</button>
+                <button class="tab-btn" data-tab="graduate">Graduate Programs</button>
+            </div>
+
+            <!-- Undergraduate Programs -->
+            <div id="undergraduate" class="tab-content active">
+                <div class="programs-grid">
+                    <div class="program-card" data-program="bscs">
+                        <h3>Bachelor of Science in Computer Science</h3>
+                        <p>4-year program focusing on software development, algorithms, and theoretical foundations</p>
+                        <button class="btn btn-small" onclick="openProgramModal('bscs')">View Details</button>
+                    </div>
+                    <div class="program-card" data-program="bsit">
+                        <h3>Bachelor of Science in Information Technology</h3>
+                        <p>4-year program emphasizing system administration, network management, and IT infrastructure</p>
+                        <button class="btn btn-small" onclick="openProgramModal('bsit')">View Details</button>
+                    </div>
+                    <div class="program-card" data-program="bsis">
+                        <h3>Bachelor of Science in Information Systems</h3>
+                        <p>4-year program bridging business and technology through enterprise systems</p>
+                        <button class="btn btn-small" onclick="openProgramModal('bsis')">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Graduate Programs -->
+            <div id="graduate" class="tab-content">
+                <div class="programs-grid">
+                    <div class="program-card" data-program="mscs">
+                        <h3>Master of Science in Computer Science</h3>
+                        <p>2-year advanced program with specializations in AI, cybersecurity, and data science</p>
+                        <button class="btn btn-small" onclick="openProgramModal('mscs')">View Details</button>
+                    </div>
+                    <div class="program-card" data-program="mit">
+                        <h3>Master in Information Technology</h3>
+                        <p>2-year professional program for IT leaders and managers</p>
+                        <button class="btn btn-small" onclick="openProgramModal('mit')">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Program Details Modal -->
+    <div id="programModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeProgramModal()">&times;</span>
+            <div id="programModalContent">
+                <!-- Content populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>College of Computer Studies</h3>
+                    <p>Empowering future technology leaders through excellence in education and research.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: info@ccs.edu.ph<br>
+                    Phone: +63 2 8888-9999</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 College of Computer Studies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script/common.js"></script>
+    <script src="../script/programs.js"></script>
+</body>
+</html>
